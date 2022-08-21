@@ -1,0 +1,184 @@
+/*font-family: 'Nunito', sans-serif;*/
+/*font-family: 'DynaPuff', cursive;*/
+/*9968B6 amethyst, 8F0037 claret 
+52001E tyrian purple C4557E ruber. 
+ffd6e6 mimi pink
+https://coolors.co/9968b6-8f0037-52001e-bde0fe-a2d2ff*/
+
+/*pongo la misma font para todo el sitio*/
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+header {
+  background-color: #c4557e;
+  padding: 16px 0;
+}
+
+header h1 {
+  color: white;
+  font-family: "DynaPuff", cursive;
+  font-size: 35px;
+  display: inline-block;
+  position: relative;
+  bottom: 40px;
+  margin-left: 15px;
+}
+
+header .botones {
+  display: inline-flex;
+  flex-wrap: wrap;
+  left: 80%;
+  bottom: 65%;
+}
+
+header i {
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+}
+/*nav*/
+
+nav {
+  background-color: #ffd6e6;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  flex-grow: 1;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 3px 6px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+nav ul li a.activo {
+  background-color: #8f0037;
+  color: white;
+}
+
+/*fin nav*/
+
+/*footer*/
+
+footer {
+  background-color: #ccc;
+  color: #333;
+  text-align: left;
+  padding: 5px 0;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  /* display: flex; */
+}
+
+footer p {
+  text-align: right;
+}
+
+h2{
+  color: #8f0037;
+}
+
+
+/*------------------inicio del home--------------------------------------------------*/
+.columnas{
+display: flex;
+}
+
+.talleres{
+  width: 48%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.taller{
+  /* display: block; */
+  font-size: 18px;
+  font-style: italic;
+  padding: 10px;
+}
+
+.taller a{
+  text-decoration: none;
+  color: #8f0037;
+}
+
+.turnos{
+ width: 48%;
+ display: flex;
+ flex-direction: row;
+ 
+}
+
+.turnos_presencial{
+  width: 50%;
+}
+.turnos_otros{
+  width: 50%;
+}
+
+.turnos figure {
+  margin: 0;
+  position: relative;
+  
+}
+
+.turnos figure img {
+  margin: 18px 5px;
+  padding: 0;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.turnos figure figcaption {
+  width: auto;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: "Nunito", sans-serif;
+  background: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 25px;
+  left: 15px;
+}
+.turnos figure figcaption a{
+  color: white;
+  text-decoration: none;
+}
+
+.turnos figure:hover figcaption {
+  background: black;
+}
+
+/*------------------fin del home--------------------------------------------------*/
+/*------------------inicio del quines--------------------------------------------------*/
+
