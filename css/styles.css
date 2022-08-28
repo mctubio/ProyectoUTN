@@ -32,9 +32,7 @@ header h1 {
   margin-left: 15px;
 }
 
-
-
-header img{
+header img {
   width: 120px;
 }
 /*nav*/
@@ -70,16 +68,23 @@ nav ul li a:hover {
 }
 
 nav ul li a.activo {
-  background-color: #9968B6;
+  background-color: #9968b6;
   color: white;
 }
 
 /*fin nav*/
 
-h2{
-  color: #9968B6;
+h2 {
+  color: #9968b6;
 }
 
+h3 {
+  color: #9968b6;
+}
+
+h4 {
+  color: #9968b6;
+}
 /*footer*/
 
 footer {
@@ -87,140 +92,424 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.pie {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.pie_info {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-footer .datos{
-  right: 20%;
-  color: #333;
+.pie_info img {
+  width: 100px;
+  margin: 20px;
+}
+
+.pie_info h3 {
+  color: black;
+  margin: 0;
+  width: auto;
+  font-size: smaller;
+}
+
+footer .pie_datos {
   padding: 5px;
   margin-top: 20px;
   align-self: center;
 }
 
-footer ul {
-  list-style: none;
-  margin: 0 20px;
-  padding: 0;
-}
-
-footer .botones {
+footer .pie_botones {
   align-self: center;
   font-size: 20px;
 }
 
-footer .botones i{
+footer .pie_botones i {
   padding: 5px;
 }
 
-footer p{
+footer p {
   align-self: flex-end;
   font-size: 10px;
+  margin-right: 10px;
 }
 
 /*------------------inicio del home--------------------------------------------------*/
-.columnas{
-display: flex;
+.columnas {
+  display: flex;
 }
 
-.talleres{
-  width: 48%;
-  padding-right: 10px;
-  box-sizing: border-box;
+col_1 {
+  margin-left: 10px;
+  /* width: 48%; */
 }
 
-.taller{
-  font-size: 18px;
-  font-style: italic;
-  padding: 10px;
+.turnos {
+  /* width: 48%; */
+  display: flex;
 }
-
-.taller a{
-  text-decoration: none;
-  color: #9968B6;
-}
-
-.turnos{
- width: 48%;
- display: flex;
- 
- 
-}
-
-.turnos_presenciales{
-  width: 70%;
-}
-
-.turnos .turnos_presenciales img{
-  width: 250px;
-  margin: 18px 5px;
-  padding: 0;
-  border-radius: 5px
-}
-
-.turnos_otros{
-  width: 70%;
-}
-
-.turnos .turnos_otros img{
-  width: 250px;
-  margin: 18px 5px;
-  border-radius: 5px
-}
-
 
 .turnos figure {
   margin: 0;
   position: relative;
-  
+}
+
+.turnos .turnos_presenciales img {
+  width: 250px;
+  margin: 18px 5px;
+  border-radius: 5px;
+}
+
+.turnos .turnos_otros img {
+  width: 250px;
+  margin: 18px 5px;
+  border-radius: 5px;
 }
 
 .turnos figure figcaption {
   width: auto;
-  padding: 15px;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   font-family: "Nunito", sans-serif;
-  background: rgb(0, 0, 0, 0.6);
+  background: rgb(0, 0, 0);
   position: absolute;
   bottom: 25px;
   left: 15px;
 }
-.turnos figure figcaption a{
-  color: white;
-  text-decoration: none;
-}
-
-.turnos figure:hover figcaption {
-  background: black;
-}
 
 /*------------------fin del home--------------------------------------------------*/
+/*------------------Inicio de quienes--------------------------------------------------*/
+
+.historia {
+  margin-left: 10px;
+}
+
+.origen {
+  margin-left: 10px;
+}
+
+
+/*------------------fin de quienes--------------------------------------------------*/
+/*------------------Inicio de especialidades--------------------------------------------------*/
+.especialistas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.especialista {
+  width: 30%;
+  text-align: center;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+.especialista img {
+  border-radius: 60%;
+  max-width: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.especialista h5,
+.especialista h6 {
+  margin: 0;
+  font-weight: bold;
+  color: #9968b6;
+}
+
+.especialista h5 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.especialista h6 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.especialista p {
+  color: #666;
+  font-size: 11px;
+}
+
+/*------------------fin de especialidades--------------------------------------------------*/
+/*------------------inicio de información--------------------------------------------------*/
+.informacion {
+  border: 0.5px solid #9968b69a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.informacion .noticia h3 {
+  font-weight: bold;
+  color: #9968b6;
+  font-size: 1.2rem;
+}
+
+.informacion .noticia h4 {
+  color: #9968b6;
+  font-weight: 500;
+  font-style: italic;
+  border-bottom: 1px solid #9968b6;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+
+.informacion img {
+  border-radius: 13px;
+  display: block;
+  max-width: 200px;
+}
+
+.informacion:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/*------------------fin de información--------------------------------------------------*/
+
+/*------------------inicio de talleres--------------------------------------------------*/
+
+.taller_imagenes {
+  margin: 8px;
+}
+
+.taller_imagenes .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagenes img {
+  width: 27%;
+  border: 0.5px solid #9968b69a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0.3em;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 2%;
+}
+
+/*------------------fin de talleras--------------------------------------------------*/
+/*------------------inicio de turnos--------------------------------------------------*/
+.contacto {
+  display: flex;
+  gap: 24px;
+  margin-left: 15px;
+}
+
+.contacto div {
+  width: 100%;
+}
+
+.datos p {
+  font-size: 14px;
+}
+
+.formulario p {
+  display: flex;
+}
+
+.formulario p label {
+  min-width: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.formulario p:nth-child(4) {
+  align-items: start;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 150px;
+}
+
+.formulario p input,
+.formulario p textarea {
+  background: #ddd;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-size: 14px;
+  padding: 6px 10px;
+  width: 80%;
+}
+
+.formulario input[type="submit"] {
+  background: #9968b6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 16px;
+  padding: 6px 20px;
+  width: auto;
+  position: relative;
+  left: 14.5rem;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #9968b6;
+}
+
+.datos i {
+  color: #9968b6;
+  font-size: 25px;
+  padding: 0 10px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*------------------fin de turnos--------------------------------------------------*/
 /*------------------inicio del media queries--------------------------------------------------*/
 
-@media (max-width: 700px){
-  .columnas{
+@media (max-width: 700px) {
+  header h1 {
+    color: black;
+    font-size: 30px;
+    bottom: 30px;
+    margin-left: 15px;
+  }
+
+  header img {
+    margin-left: 15px;
+    width: 96px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+  }
+
+  /* inicio home */
+  .columnas {
     display: flex;
     flex-direction: column;
-    }
+    align-items: center;
+  }
+  .col_1 {
+    margin-left: 10px;
+  }
 
-    .talleres{
-      width: 100%;
-    }
+  .turnos {
+    flex-wrap: wrap;
+  }
 
-    .turnos{
-      width: 100%;
-    }
+  .turnos .turnos_presenciales img {
+    width: 200px;
+    margin: 15px 5px;
+  }
 
-    header h1 {
-      color: black;
-      font-size: 30px;
-      bottom: 30px;
-      margin-left: 15px;
-    }
-     
-    header img{
-      width: 96px;
-    }
+  .turnos .turnos_otros img {
+    width: 200px;
+    margin: 15px 5px;
+  }
 
-    nav ul li a {
-      font-size: 13px;
-    }
+  /* fin home */
+
+  .especialistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .especialista {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .especialista {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .especialista img {
+    border-radius: 60%;
+    max-width: 15%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .especialista h5 {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .especialista h6 {
+    font-size: 12px;
+    font-style: italic;
+    padding: 8px;
+  }
+
+  .especialista p {
+    padding: 8px;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .datos {
+    margin-bottom: 25px;
+  }
+
+  .informacion img {
+    border-radius: 13px;
+    display: block;
+    max-width: 150px;
+  }
 }
+
+
+@media screen and (max-width: 390px) {
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .pie {
+    flex-wrap: wrap;
+  }
+
+  .pie img{
+    width: 80px;
+  }
+
+  .formulario input[type="submit"] {
+    left: 4.5rem;
+  }
+
+  header h1 {
+    margin-top: 30px;
+    margin-bottom: auto;
+  }
+  
+  header img {
+    width: 90px;
+  }
+
+  .informacion{
+    flex-direction: column;
+  }
+  .informacion:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .informacion img {
+    width: 90px;
+  }
+
+}
+
+/*------------------fin del media queries--------------------------------------------------*/
